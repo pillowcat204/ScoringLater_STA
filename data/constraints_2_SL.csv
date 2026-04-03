@@ -1,0 +1,14 @@
+CONSTRAINT_ID,TYPE,WHAT,CONDITION,LB,UB,ONOFF
+C1,Number,Item,,38,38,NA
+C2,Number,Item,"OBJECTIVE == ""NS""",4,4,NA
+C3,Number,Item,"OBJECTIVE == ""EE""",11,11,NA
+C4,Number,Item,"OBJECTIVE == ""FT""",9,9,NA
+C5,Number,Item,"OBJECTIVE == ""GM""",8,8,NA
+C6,Number,Item,"OBJECTIVE == ""SP""",6,6,NA
+C7,Number,Item,"TYPE == ""MC""",38,38,NA
+C8,Number,Item,"TYPE == ""CR""",0,0,NA
+C9,Number,Item,LEVEL == 1,1,9,NA
+C10,Number,Item,LEVEL == 2,0,0,NA
+C11,Number,Item,LEVEL == 3,1,9,NA
+C12,Number,Item,LEVEL == 4,0,0,NA
+C13,Order,Item,LEVEL,NA,NA,NA
