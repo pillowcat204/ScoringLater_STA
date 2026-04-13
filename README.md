@@ -10,8 +10,8 @@ The example demonstrates how scoring-later versus scoring-within conditions were
 
 ## Repository contents
 
-- `R/cat_2.R`: simulation script for one representative condition  
-- `R/calc_pairwise_overlaps.R`: helper function for pairwise overlap calculations  
+- `code/cat_2.R`: simulation script for one representative condition  
+- `code/calc_pairwise_overlaps.R`: helper function for pairwise overlap calculations  
 - `data/irt.par.csv`: item parameter file  
 - `data/itemattrib_1st.csv`: item attribute file (polytomous items located in the first half of the test)
 - `data/constraints_2_SW.csv`: constraints for the scoring-within condition  
@@ -57,7 +57,7 @@ The code was written in R and requires the following packages:
 4. Run:
 
 ```r
-source("R/cat_2.R")
+source("code/cat_2.R")
 ```
 
 The script will generate an output file in the `output/` folder.
@@ -68,10 +68,22 @@ The script will generate an output file in the `output/` folder.
 
 The script produces simulation results for 100 replications, including summary indices such as:
 
-- RMSE
-- mean bias
-- pairwise test overlap  
-- maximum item exposure rate  
+- `mean_bias_SW_shadow`: mean bias for the scoring-within condition based on shadow test estimates
+- `mean_bias_SL_shadow`: mean bias for the scoring-later condition based on shadow test estimates
+- `mean_bias_SW`: mean bias for the scoring-within condition
+- `mean_bias_SL`: mean bias for the scoring-later condition
+- `RMSE_SW_shadow`: root mean square error for the scoring-within condition based on shadow test estimates
+- `RMSE_SL_shadow`: root mean square error for the scoring-later condition based on shadow test estimates
+- `RMSE_SW`: root mean square error for the scoring-within condition
+- `RMSE_SL`: root mean square error for the scoring-later condition
+- `mean_overlap_SW`: mean item overlap for the scoring-within condition
+- `sd_overlap_SW`: standard deviation of item overlap for the scoring-within condition
+- `mean_overlap_SL`: mean item overlap for the scoring-later condition
+- `sd_overlap_SL`: standard deviation of item overlap for the scoring-later condition
+- `max_exp_SW`: maximum item exposure rate for the scoring-within condition
+- `max_exp_SL`: maximum item exposure rate for the scoring-later condition
+- `replication`: replication number
+
 
 ---
 
